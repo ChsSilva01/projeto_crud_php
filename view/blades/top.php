@@ -1,3 +1,5 @@
+<?php include("../model/connect.php")?>
+<!-- Incluir um php na página que estou utlizando -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,3 +11,6 @@
 </head>
 <body>
     <!-- CRUD: sistema para manipular um banco de dados -->
+    <!-- Controller: ações -->
+    <!-- Model: banco de dados -->
+    <!-- View: Telas -->
