@@ -10,6 +10,7 @@
         <thead>
             <tr class="text-center">
                 <th>Código</th>
+                <th>Foto</th>
                 <th>Nome</th>
                 <th>Cidade</th>
                 <th>Curso</th>
@@ -20,7 +21,7 @@
             <?php funcaoTabela(); ?>
         </tbody>
         <tfoot>
-            <td colspan="6" class="text-center">Rodapé da tabela</td>
+            <td colspan="7" class="text-center">Rodapé da tabela</td>
         </tfoot>
     </table>
     <!-- <form action="">

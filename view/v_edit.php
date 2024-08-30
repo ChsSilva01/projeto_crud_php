@@ -1,4 +1,6 @@
-<?php include("blades/top.php"); ?>
+<?php include("blades/top.php"); 
+include("../controller/funcao-edit-aluno.php")
+?>
 
 <div class="container mt-5">
     <!-- "/" voltar para index -->
@@ -7,21 +9,20 @@
 
 <div class="container mt-2 bg-white p-3 rounded">
     <!-- O que for cadastrado sera "postado" enviado -->
-    <form action="../controller/funcao-create-aluno.php" method="post" class="forms" enctype="multipart/form-data">
+    <form action="../controller/funcao-update-aluno.php" method="post">
+        <input type="hidden" name="campo_codigo" value="<?php echo $exibe[0]?>">
+
         <label class="form-label">Nome:</label>
-        <input type="text" class="form-control" name="campo_nome">
+        <input type="text" class="form-control" name="campo_nome" value="<?php echo $exibe[2]?>">
 
         <label class="form-label pt-3">Cidade:</label>
-        <input type="text" class="form-control" name="campo_cidade">
+        <input type="text" class="form-control" name="campo_cidade" value="<?php echo $exibe[3]?>">
         
         <label class="form-label pt-3">Curso:</label>
-        <input type="text" class="form-control" name="campo_curso">
-
-        <label class="form-label pt-3">Foto:</label>
-        <input type="file" class="from-control" name="arquivo">
+        <input type="text" class="form-control" name="campo_curso" value="<?php echo $exibe[4]?>">
         <br>
         <div class="container mt-5 d-flex justify-content-end ">
-            <input type="submit" value="Salvar" href="" class="btn btn-primary">
+            <input type="submit" value="Atualizar" class="btn btn-primary">
         </div>
     </form>
     <!-- <form action="">
