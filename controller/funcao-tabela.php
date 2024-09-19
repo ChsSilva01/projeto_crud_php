@@ -2,6 +2,7 @@
     function funcaoTabela(){     
         include("../model/connect.php");
         $query = mysqli_query($conexao,"SELECT * FROM alunos ORDER BY Aluno_Codigo DESC");
+        //por meio de uma estrutura de repetição fazemos uma lista em formato de tabela de todas as informações dos usuários presentes
         while($exibe = mysqli_fetch_array($query)){
             echo "
                 <tr>
